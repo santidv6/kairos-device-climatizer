@@ -45,10 +45,10 @@ void setup () {
    
    Serial.begin(9600); // Establece la velocidad de datos del puerto serie
    
-//   if(estadoLuz==LOW)
-//     digitalWrite(rele,HIGH);
-//   else
-//     digitalWrite(rele,LOW);
+   if(estadoLuz==LOW)
+     digitalWrite(rele,HIGH);
+   else
+     digitalWrite(rele,LOW);
 }
 
 void interrupcion()
