@@ -28,7 +28,7 @@ int hora_off =22;//Horas que queremos que esté encendida
 int minutos_off = 0; //Minutos que queremos que esté encendida
 int h_to_min_off= hora_off * 60 + minutos_off;
 
-double convertirASegundos = 1000000;
+const long convertirAuSegundos = 1000000;
 int segundos = 2; // Dispara cada 2 segundos la interrupción
 int encendido =0; // a 0 luz apagada, 1 encendida
 RTC_DS1307 RTC;
@@ -36,7 +36,7 @@ RTC_DS1307 RTC;
 void setup () {
    pinMode(rele, OUTPUT); //Declaramos el pin asociado al rele como salida
    
-   Timer1.initialize(segundos*convertirASegundos); //Inicializamos un timer.
+   Timer1.initialize(segundos*convertirAuSegundos); //Inicializamos un timer.
    Timer1.attachInterrupt(interrupcion); // Activa la interrupcion y la asocia a ISR_Blink
    
    Wire.begin(); // Inicia el puerto I2C
