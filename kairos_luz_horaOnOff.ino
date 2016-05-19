@@ -7,6 +7,7 @@ Fecha: 11/05/2016
 URL: https://github.com/frankamente
 email: fran29400@gmail.com
 Referencia: http://www.tuelectronica.es/tutoriales/arduino/reloj-rtc-i2c-con-arduino.html  http://www.prometec.net/timers/
+Modified by santidv6 (https://github.com/santidv6/kairos-device-climatizer)
 */
 
 #include <Wire.h> 
