@@ -30,7 +30,6 @@ int h_to_min_off= hora_off * 60 + minutos_off;
 
 const long convertirAuSegundos = 1000000;
 int segundos = 2; // Dispara cada 2 segundos la interrupción
-int encendido =0; // a 0 luz apagada, 1 encendida
 RTC_DS1307 RTC;
 
 void setup () {
