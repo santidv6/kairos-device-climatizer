@@ -1,8 +1,8 @@
 #include "util.hpp"
 
-enum sources { EEPROM };
+enum sources { EEPROM, DEFAULt };
 
-const int source = EEPROM;
+const int source = DEFAULt;
 
 /**
  * Carga la configuración general.
@@ -15,6 +15,9 @@ Config LoadConfig() {
   case EEPROM:
     config = LoadEEPROMConfig();
     break;
+	case DEFAULt:
+	config = LoadDEFAULtConfig();
+	break;
   }
 
   return config;
@@ -28,6 +31,20 @@ Config LoadEEPROMConfig() {
   struct Config config;
 
   // TODO
+
+  return config;
+}
+
+/**
+ * Carga la configuración general por defecto
+ * @return configuración cargada.
+ */
+Config LoadDEFAULtConfig() {
+  struct Config config;
+
+  config.hour = 12;
+  config.minute = 0;
+  config.interval = 8*60;
 
   return config;
 }

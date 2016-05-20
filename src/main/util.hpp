@@ -1,4 +1,4 @@
-#include "Arduino.h"
+#include <Arduino.h>
 
 // Config almacena la configuración general
 struct Config {
@@ -9,3 +9,4 @@ struct Config {
 
 Config LoadConfig();
 Config LoadEEPROMConfig();
+Config LoadDEFAULtConfig();

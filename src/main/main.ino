@@ -1,5 +1,5 @@
 #include "util.hpp"
-#include <kairos-sun.hpp>
+#include "KairosSun.hpp"
 
 // Variables globales
 const uint8_t RELAY = 12;
